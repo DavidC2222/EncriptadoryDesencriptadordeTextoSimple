@@ -150,3 +150,24 @@ footer {
   color: red;
   border: 1px solid red;
 }
+
+@media only screen and (min-width: 768px) {
+    .container {
+      justify-content: space-between;
+    }
+    
+    .input-container {
+      width: 50%;
+      padding-bottom: 20%;
+    }
+    
+    .result-container {
+      width: 25%;
+      height: 80%;
+      margin-top: 0;
+    }
+  
+    .logo {
+      width: 60px;
+    }
+  }
