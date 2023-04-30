@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/nerd-fonts@2.1.2/fonts/complete.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <textarea
+          class="input-text"
+          rows="4"
+          placeholder="Ingresa el texto"
+        ></textarea>
+        <div class="button-container">
+          <button class="button">Encriptar</button>
+          <button class="button">Desencriptar</button>
+        </div>
+      </div>
+      <div class="result-container">
+        <div class="empty-result">
+          <img src="img/espera.jpg" alt="Espera" />
+          <p>Aun no hay un resultado</p>
+        </div>
+        <p class="result"></p>
+        <button class="button copy-button">Copiar</button>
+      </div>
+      <div class="error-popup" style="display: none">
+        <div class="error-content">
+          <img src="img/error.jpg" alt="Error" />
+          <h2 style="color: red">CARACTER INVÁLIDO</h2>
+          <p>No se aceptan caracteres con acentos, mayúsculas o especiales</p>
+          <button class="close-error">Cerrar</button>
+        </div>
+      </div>
+    </div>
+    <img class="logo" src="img/logo.png" alt="Logo" />
+    <footer>Desarrollado por David Casildo Enciso</footer>
+    <script src="app.js"></script>
+  </body>
+</html>

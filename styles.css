@@ -1,0 +1,152 @@
+body {
+  font-family: "Nerd Font";
+  background-color: white;
+  background-image: url("img/blob-scene-haikei.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #333;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.input-container {
+  width: 50%;
+  padding-bottom: 20%;
+}
+.input-text {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 18px;
+  font-family: "Nerd Font";
+  outline: none;
+  color: #333;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.input-text::placeholder {
+  color: #999;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.button {
+  background-color: #00f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-family: "Nerd Font";
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: white;
+  color: #00f;
+  border: 1px solid #00f;
+}
+.result-container {
+  width: 25%;
+  height: 80%;
+  background-color: #f0f0f0;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.result {
+  font-size: 18px;
+  font-family: "Nerd Font";
+  color: #333;
+  margin-bottom: 1rem;
+}
+.empty-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-result img {
+  width: 50%;
+  height: auto;
+}
+.empty-result p {
+  font-size: 18px;
+  font-family: "Nerd Font";
+  color: #333;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  border-radius: 32px;
+}
+
+.copy-button {
+  position: absolute;
+  bottom: 1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+  font-family: "Nerd Font";
+  color: #333;
+  margin: 1rem;
+}
+
+.error-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.error-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.close-error {
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  font-family: "Nerd Font";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.close-error:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
